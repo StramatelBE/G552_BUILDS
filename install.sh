@@ -35,7 +35,7 @@ clear
 #CLONE REPOSITORY
 print_progress "Cloning repository...               "
 cd ~
-git clone $GITHUB_REPOSITORY $WORKDIR
+#git clone $GITHUB_REPOSITORY $WORKDIR
 clear
 
 #NODE INSTALL
