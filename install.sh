@@ -1,5 +1,5 @@
 #!/bin/bash
-
+clear
 echo -e "Starting \033[35m setup \033[0m process..."
 
 GITHUB_REPOSITORY=https://github.com/StramatelBE/G552_BUILDS.git
@@ -12,17 +12,19 @@ CURRENT_STEP=-1
 function print_progress {
     CURRENT_STEP=$((CURRENT_STEP + 1))
     PERCENT=$(( (CURRENT_STEP * 100) / TOTAL_STEPS ))
-    echo -ne "Progress: ["
-    for ((i = 0; i < (PERCENT / 10); i++)); do echo -ne "\033[33m#\033[0m"; done
-    for ((i = (PERCENT / 10); i < 10; i++)); do echo -ne "\033[31m-\033[0m"; done
-    echo -ne "] \033[32m $PERCENT\033[0m% - \033[36m $1 \033[0m \r"
+    echo -e "Progress: ["
+    for ((i = 0; i < (PERCENT / 10); i++)); do echo -e "\033[33m#\033[0m"; done
+    for ((i = (PERCENT / 10); i < 10; i++)); do echo -e "\033[31m-\033[0m"; done
+    echo -e "] \033[32m $PERCENT\033[0m% - \033[36m $1 \033[0m \r"
     sleep 1 # Simulating time taken for the step
 }
 
 #SOFTWARE UPDATE
 print_progress "Updating software packages..."
-sudo apt update >/dev/null 2>&1
-sudo apt upgrade -y >/dev/null 2>&1
+sudo apt update
+clear
+sudo apt upgrade
+clear
 
 #BASIC UTILITIES
 print_progress "Installing basic utilities...        "
