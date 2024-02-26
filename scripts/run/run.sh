@@ -1,6 +1,7 @@
 #!/bin/bash
-SCRIPTDIR=~/server/scripts/run
-BUILDDIR=~/server/build
+
+SCRIPTDIR=~/server_builds/scripts/run
+BUILDDIR=~/server_builds/builds
 
 cp $SCRIPTDIR/startBackend.sh $BUILDDIR/backend/
 cp $SCRIPTDIR/startFrontend.sh $BUILDDIR/frontend/
