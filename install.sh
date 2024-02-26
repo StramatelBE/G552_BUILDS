@@ -40,7 +40,8 @@ bash ~/$WORKDIR/scripts/setup/node_install.sh >/dev/null 2>&1
 npm install -g serve >/dev/null 2>&1
 
 #CHECKSUM CREATION
-echo $(sha256sum "~/$WORKDIR/$BUILD_FILE" >> ~/$WORKDIR/checksum)
+cd ~/$WORKDIR
+echo $(sha256sum "$BUILD_FILE" > ~/$WORKDIR/checksum)
 
 #UNZIPPING 
 print_progress "Unzipping...                      "
