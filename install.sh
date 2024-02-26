@@ -32,10 +32,19 @@ sudo apt install -y vim curl wget git zip
 clear
 
 #CLONE REPOSITORY
-print_progress "Cloning repository...               "
+print_progress "Checking repository...               "
 cd ~
-git clone $GITHUB_REPOSITORY $WORKDIR
+if [ -d "$WORKDIR/.git" ]; then
+    echo "Repository already exists, pulling latest changes..."
+    cd "$WORKDIR"
+    git pull
+    cd ..
+else
+    echo "Cloning repository..."
+    git clone $GITHUB_REPOSITORY $WORKDIR
+fi
 clear
+
 
 #NODE INSTALL
 print_progress "Installing Node.js...               "
