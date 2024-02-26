@@ -41,7 +41,7 @@ npm install -g serve >/dev/null 2>&1
 
 #CHECKSUM CREATION
 cd ~/$WORKDIR
-echo $(sha256sum "$BUILD_FILE" > ~/$WORKDIR/checksum)
+sha256sum "$BUILD_FILE" | awk {'print $1'} > ~/$WORKDIR/checksum
 
 #UNZIPPING 
 print_progress "Unzipping...                      "
