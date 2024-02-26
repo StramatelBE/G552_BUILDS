@@ -49,8 +49,8 @@ VERSION=$(cat ~/$WORKDIR/builds/selected_version)
 BUILD_FILE=G552_BUILD_$VERSION.zip
 #UNZIPPING 
 print_progress "Unzipping...                      "
-echo "Unzipping ~/$WORKDIR/$SELECTED_VERSION/$BUILD_FILE"
-unzip ~/$WORKDIR/$SELECTED_VERSION/$BUILD_FILE 
+echo "Unzipping ~/$WORKDIR/$VERSION/$BUILD_FILE"
+unzip ~/$WORKDIR/$VERSION/$BUILD_FILE 
 #clear
 
 #RUN
