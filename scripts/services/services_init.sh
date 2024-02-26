@@ -1,7 +1,7 @@
 #!/bin/bash
 
 SERVDIR=/etc/systemd/system
-SCRIPTDIR=~/server/scripts/services
+SCRIPTDIR=~/server_builds/scripts/services
 ENABLE="sudo systemctl enable"
 START="sudo systemctl start"
 RELOAD="sudo systemctl daemon-reload"
