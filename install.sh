@@ -1,5 +1,6 @@
 #!/bin/bash
 clear
+
 echo -e "Starting \033[35m setup \033[0m process..."
 
 GITHUB_REPOSITORY=https://github.com/StramatelBE/G552_BUILDS.git
