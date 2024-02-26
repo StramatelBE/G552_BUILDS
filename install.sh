@@ -59,18 +59,19 @@ BUILD_FILE=G552_BUILD_$VERSION.zip
 #UNZIPPING 
 print_progress "Unzipping...                      "
 echo "Unzipping ~/$WORKDIR/builds/$VERSION/$BUILD_FILE"
-unzip ~/$WORKDIR/builds/$VERSION/$BUILD_FILE 
-#clear
+cd ~/$WORKDIR/builds/$VERSION
+unzip -o $BUILD_FILE
+clear
 
 #RUN
 print_progress "Running application...              "
 bash ~/$WORKDIR/scripts/run/run.sh 
-#clear
+clear
 
 #SERVICE
 print_progress "Initializing services...            "
-# bash ~/$WORKDIR/scripts/services/services_init.sh
-#clear
+bash ~/$WORKDIR/scripts/services/services_init.sh
+clear
 
 #FINISHING
 print_progress "Installation complete !            "

@@ -1,5 +1,7 @@
 #!/bin/bash
 
-cd ~/server/build/frontend/
+VERSION=$(cat ~/server_builds/builds/selected_version)
+
+cd ~/server_builds/builds/$VERSION/frontend
 
 npm start
