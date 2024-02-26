@@ -1,7 +1,6 @@
 #!/bin/bash
 clear
 
-echo -e "Starting \033[35m setup \033[0m process..."
 
 GITHUB_REPOSITORY=https://github.com/StramatelBE/G552_BUILDS.git
 WORKDIR=server_builds
@@ -22,6 +21,7 @@ function print_progress {
 
 #SOFTWARE UPDATE
 print_progress "Updating software packages..."
+echo -e "Starting \033[35m setup \033[0m process..."
 sudo apt update -y
 sudo apt upgrade -y
 clear
@@ -34,7 +34,7 @@ clear
 #CLONE REPOSITORY
 print_progress "Cloning repository...               "
 cd ~
-#git clone $GITHUB_REPOSITORY $WORKDIR
+git clone $GITHUB_REPOSITORY $WORKDIR
 clear
 
 #NODE INSTALL
