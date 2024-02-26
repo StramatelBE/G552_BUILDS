@@ -93,3 +93,4 @@ if [[ $user_input =~ ^[Nn]$ ]]; then
     kill $!
     echo -e "\nReboot cancelled."
 fi
+
