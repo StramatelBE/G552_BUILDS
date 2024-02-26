@@ -7,7 +7,7 @@ START="sudo systemctl start"
 RELOAD="sudo systemctl daemon-reload"
 
 echo "SERVICE INIT"
-cp $SCRIPTDIR/*.service $SERVDIR/
+sudo cp $SCRIPTDIR/*.service $SERVDIR/
 $RELOAD
 echo "ENABLING SERVICES AT STARTUP"
 $ENABLE backend.service
