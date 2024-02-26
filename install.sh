@@ -4,10 +4,9 @@ echo -e "Starting \033[35m setup \033[0m process..."
 
 GITHUB_REPOSITORY=https://github.com/StramatelBE/G552_BUILDS.git
 WORKDIR=server_builds
-BUILD_FILE=G552_BUILDS.zip
 
 # Initialize progress
-TOTAL_STEPS=8
+TOTAL_STEPS=6
 CURRENT_STEP=-1
 
 function print_progress {
@@ -27,33 +26,39 @@ sudo apt upgrade -y >/dev/null 2>&1
 
 #BASIC UTILITIES
 print_progress "Installing basic utilities...        "
-sudo apt install -y vim curl wget git zip >/dev/null 2>&1
+sudo apt install -y vim curl wget git zip
+clear
 
 #CLONE REPOSITORY
 print_progress "Cloning repository...               "
 cd ~
-git clone $GITHUB_REPOSITORY $WORKDIR >/dev/null 2>&1
+git clone $GITHUB_REPOSITORY $WORKDIR
+clear
 
 #NODE INSTALL
 print_progress "Installing Node.js...               "
-bash ~/$WORKDIR/scripts/setup/node_install.sh >/dev/null 2>&1
-npm install -g serve >/dev/null 2>&1
+bash ~/$WORKDIR/scripts/setup/node_install.sh
+clear
+npm install -g serve 
+clear
 
-#CHECKSUM CREATION
-cd ~/$WORKDIR
-sha256sum "$BUILD_FILE" | awk {'print $1'} > ~/$WORKDIR/checksum
-
+#GETTING CURRENT VERSION
+VERSION=$(cat ~/$WORKDIR/builds/selected_version)
+BUILD_FILE=G552_BUILD_$VERSION.zip
 #UNZIPPING 
 print_progress "Unzipping...                      "
-unzip ~/$WORKDIR/$BUILD_FILE >/dev/null 2>&1
+unzip ~/$WORKDIR/$SELECTED_VERSION/$BUILD_FILE 
+clear
 
 #RUN
 print_progress "Running application...              "
-# bash ~/$WORKDIR/scripts/run/run.sh >/dev/null 2>&1
+bash ~/$WORKDIR/scripts/run/run.sh 
+clear
 
 #SERVICE
 print_progress "Initializing services...            "
-# bash ~/$WORKDIR/scripts/services/services_init.sh >/dev/null 2>&1
+# bash ~/$WORKDIR/scripts/services/services_init.sh
+clear
 
 #FINISHING
 print_progress "Installation complete !            "
