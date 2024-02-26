@@ -22,9 +22,9 @@ function print_progress {
 
 #SOFTWARE UPDATE
 print_progress "Updating software packages..."
-sudo apt update
+sudo apt update -y
 clear
-sudo apt upgrade
+sudo apt upgrade -y
 clear
 
 #BASIC UTILITIES
