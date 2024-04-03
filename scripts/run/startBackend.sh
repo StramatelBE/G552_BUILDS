@@ -1,9 +1,10 @@
 #!/bin/bash
 
-export PATH="/home/stramatel/.nvm/versions/node/v20.11.1/bin:$PATH"
+export PATH="/home/STRAMATEL/.nvm/versions/node/v20.11.1/bin:$PATH"
+export DISPLAY=:0
 
-VERSION=$(cat ~/server_builds/builds/selected_version)
+VERSION=$(cat ~/builds/builds/selected_version)
 
-cd ~/server_builds/builds/$VERSION/build/backend
+cd ~/builds/builds/$VERSION/build/backend
 
 npm start
