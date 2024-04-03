@@ -5,8 +5,8 @@ After=network.target
 [Service]
 Type=simple
 User=stramatel
-WorkingDirectory=/home/stramatel/server/build/backend
-ExecStart=/bin/bash /home/stramatel/server/build/backend/startBackend.sh
+WorkingDirectory=/home/stramatel/server_builds/builds/
+ExecStart=/usr/bin/bash /home/stramatel/server_builds/builds/startBackend.sh
 Restart=on-failure
 
 [Install]

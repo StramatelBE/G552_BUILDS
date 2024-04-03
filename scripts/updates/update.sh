@@ -4,6 +4,8 @@
 # If not, remove the builds and unzip the corresponding builds version in the server folder
 
 WORKDIR=~/server_builds
-BUILD_FOLDER=G552_BUILDS.zip
+BUILD_FOLDER=builds
+
+
 
 

@@ -6,7 +6,7 @@ After=network.target
 Type=simple
 User=stramatel
 WorkingDirectory=/home/stramatel/server_builds/builds/
-ExecStart=/bin/bash /home/stramatel/server_builds/builds/startDisplay.sh
+ExecStart=/usr/bin/bash /home/stramatel/server_builds/builds/startDisplay.sh
 Restart=on-failure
 
 [Install]
