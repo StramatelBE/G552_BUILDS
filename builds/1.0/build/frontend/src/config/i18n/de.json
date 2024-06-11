@@ -1,0 +1,90 @@
+{
+  "Macro": {
+    "title": "Makro",
+    "number": "Nummer",
+    "slideshow": "Diashow",
+    "none": "keine",
+    "Explanation": {
+      "1": "Zeigt die Punktzahl an",
+      "11": "startet die Animation für 1 Punkt",
+      "12": "startet die Animation für 2 Punkte",
+      "13": "startet die Animation für 3 Punkte",
+      "14": "startet die Animation für die Auszeit",
+      "15": "startet die Animation für das Foul"
+    }
+  },
+  "Profile": {
+    "title": "Profil",
+    "application": "Anwendung",
+    "changePassword": "Passwort ändern",
+    "darkMode": "Dunkler Modus",
+    "usedStorageSpace": "Genutzter Speicherplatz",
+    "panelsTest": "Panel-Test",
+    "languages": "Sprache",
+    "info": "Information",
+    "account": "Konto",
+    "automaticStandby": "Automatischer Standby",
+    "Dialog": {
+      "chooseTime": "Zeit auswählen",
+      "pleaseSelectMinutesAndSeconds": "Bitte wählen Sie Minuten und Sekunden aus"
+    }
+  },
+  "Diaporama": {
+    "title": "Wiedergabelisten",
+    "emptyListMessage": "Wiedergabelisten mit + hinzufügen",
+    "listTitle": "Liste der Wiedergabelisten",
+    "Dialog": {
+      "addNew": "Neue Wiedergabeliste hinzufügen",
+      "name": "Name",
+      "areYouSureToDelete": "Möchten Sie wirklich löschen",
+      "areYouSureToDeleteMediaEvent": "Möchten Sie dieses Medienereignis wirklich löschen?"
+    }
+  },
+  "Login": {
+    "passwordMismatch": "Die Passwörter stimmen nicht überein",
+    "passwordChange": "Passwort ändern",
+    "passwordChangeSuccess": "Passwort erfolgreich geändert",
+    "newPassword": "Neues Passwort",
+    "confirmNewPassword": "Neues Passwort bestätigen",
+    "errorMessage": "Falscher Benutzername oder falsches Passwort",
+    "passwordAdmin": "Admin-Passwort",
+    "title": "Anmelden",
+    "username": "Benutzername",
+    "password": "Passwort",
+    "loginButton": "Anmelden",
+    "lostPassword": "Passwort vergessen",
+    "Dialog": {
+      "doYouReallyWantToLogout": "Möchten Sie sich wirklich abmelden?",
+      "userAlreadyConnected": "Ein Benutzer ist bereits angemeldet",
+      "doYouWantToDisconnect": "Möchten Sie ihn trennen?"
+    }
+  },
+  "Media": {
+    "title": "Medien",
+    "add": "Medien mit + hinzufügen",
+    "upload": "Hochladen",
+    "Dialog": {
+      "areYouSureToDelete": "Möchten Sie dieses Medium wirklich löschen?"
+    }
+  },
+  "Dialog": {
+    "cancel": "Abbrechen",
+    "confirm": "Bestätigen",
+    "delete": "Löschen",
+    "close": "Schließen",
+    "save": "Speichern",
+    "confirmDeletion": "Löschung bestätigen",
+    "yes": "Ja",
+    "no": "Nein"
+  },
+  "Scoreboard": {
+    "Guest": "Gast",
+    "Home": "Heim"
+  },
+  "Admin": {
+    "title": "Administration",
+    "serialNumber": "Seriennummer",
+    "canalNumber": "Kanalnummer",
+    "ipAddress": "IP-Adresse"
+  }
+}

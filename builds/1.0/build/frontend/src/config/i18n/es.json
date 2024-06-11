@@ -1,0 +1,90 @@
+{
+  "Macro": {
+    "title": "Macro",
+    "number": "número",
+    "slideshow": "presentación de diapositivas",
+    "none": "ninguno",
+    "Explanation": {
+      "1": "Muestra la puntuación",
+      "11": "lanzar animación de 1 punto",
+      "12": "lanzar animación de 2 puntos",
+      "13": "lanzar animación de 3 puntos",
+      "14": "lanzar animación de tiempo muerto",
+      "15": "lanzar animación de falta"
+    }
+  },
+  "Profile": {
+    "title": "Perfil",
+    "application": "Aplicación",
+    "changePassword": "Cambiar contraseña",
+    "darkMode": "Modo oscuro",
+    "usedStorageSpace": "Espacio de almacenamiento utilizado",
+    "panelsTest": "Prueba de paneles",
+    "languages": "Idioma",
+    "info": "Información",
+    "account": "Cuenta",
+    "automaticStandby": "Apagado automático",
+    "Dialog": {
+      "chooseTime": "Elegir el tiempo",
+      "pleaseSelectMinutesAndSeconds": "Por favor, seleccione los minutos y los segundos"
+    }
+  },
+  "Diaporama": {
+    "title": "listas de reproducción",
+    "emptyListMessage": "Agregar listas de reproducción con +",
+    "listTitle": "Lista de listas de reproducción",
+    "Dialog": {
+      "addNew": "Agregar una nueva lista de reproducción",
+      "name": "Nombre",
+      "areYouSureToDelete": "¿Está seguro de que desea eliminar",
+      "areYouSureToDeleteMediaEvent": "¿Está seguro de que desea eliminar este evento de lista de reproducción?"
+    }
+  },
+  "Login": {
+    "passwordMismatch": "Las contraseñas no coinciden",
+    "passwordChange": "Cambiar la contraseña",
+    "passwordChangeSuccess": "Contraseña cambiada con éxito",
+    "newPassword": "Nueva contraseña",
+    "confirmNewPassword": "Confirmar nueva contraseña",
+    "errorMessage": "Nombre de usuario o contraseña incorrectos",
+    "passwordAdmin": "Contraseña de administrador",
+    "title": "Iniciar sesión",
+    "username": "Nombre de usuario",
+    "password": "Contraseña",
+    "loginButton": "Iniciar sesión",
+    "lostPassword": "Contraseña olvidada",
+    "Dialog": {
+      "doYouReallyWantToLogout": "¿Realmente quieres cerrar la sesión?",
+      "userAlreadyConnected": "Ya hay un usuario conectado",
+      "doYouWantToDisconnect": "¿Quieres desconectarlo?"
+    }
+  },
+  "Media": {
+    "title": "Medios",
+    "add": "Agregar Medios con +",
+    "upload": "Subir",
+    "Dialog": {
+      "areYouSureToDelete": "¿Está seguro de que desea eliminar este medio?"
+    }
+  },
+  "Dialog": {
+    "cancel": "Cancelar",
+    "confirm": "Confirmar",
+    "delete": "Eliminar",
+    "close": "Cerrar",
+    "save": "Guardar",
+    "confirmDeletion": "confirmar eliminación",
+    "yes": "Sí",
+    "no": "No"
+  },
+  "Scoreboard": {
+    "Guest": "Visitante",
+    "Home": "Local"
+  },
+  "Admin": {
+    "title": "Administración",
+    "serialNumber": "Número de serie",
+    "canalNumber": "Número de canal",
+    "ipAddress": "Dirección IP"
+  }
+}
